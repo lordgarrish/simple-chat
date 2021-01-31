@@ -3,7 +3,7 @@ import java.net.*;
 import java.util.*;
 
 public class ChatServer {
-    private static List<ClientConnection> connections;
+    private static final List<ClientConnection> connections = new ArrayList<>();
 
     public static List<ClientConnection> getConnections() {
         return Collections.unmodifiableList(connections);
@@ -29,7 +29,6 @@ public class ChatServer {
     public static void main(String[] args) throws IOException{
         try (ServerSocket s = new ServerSocket(5000)) {
             int i = 1;
-            connections = new ArrayList<>();
 
             while(true) {
                 Socket incoming = s.accept();
