@@ -1,9 +1,12 @@
 Simple command line chat for demonstrating basic network features in Java.
-#### Usage
+### Usage
 You will need Java 11 or later.<br><br>
-Start the chat server by running command in terminal:<br>
-<code>java src/ChatServer.java</code><br><br>
+Start the chat server. Inside <code>src</code> folder run the following
+command in your terminal:<br>
+<code>java ChatServer.java</code><br><br>
 Connect as client:<br>
-<code>java src/ChatClient.java</code><br><br>
-In client terminal type anything, press 'Enter' to get messages from another users,
-type 'EXIT' to exit
+<code>java ChatClient.java</code><br>
+You can connect multiple clients to one server.<br>
+
+In client terminal type anything, press 'Enter' to send a message,
+type 'EXIT' to exit.
